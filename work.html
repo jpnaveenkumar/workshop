@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+       <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <style>
+		img:hover{
+		width:170px;
+		height:170px;}
+
+
+		#modal2{
+		width:400px;
+		height:400px;}
+	  </style>
+
+    </head>
+<body>
+<div id="modal2" class="modal" style="">
+<div class="modal-content">
+		<img style="padding-left:20px;padding-top:15px;" id="place" src="" height="330" width="350"/>
+	 </div>
+</div>
+
+<div id="modal1" class="modal" style="background-color:#F99C0C;">
+	<div class="modal-header" style="color:white;margin-top:0px;">
+		<center><h5 >Welcome to Frontend Workshop</h5></center>
+	 </div>
+	<div class="modal-content" style="background-color:white;">
+		<center><p><b>Session 1 : </b> Materialize CSS </p></center>
+		<center><p><b>Session 2 : </b>JQuery and Ajax (api demo)</p></center>
+		<center><b>*( html, css, javascript to be known as pre-requisite)</b></center>
+	</div>
+	 <div class="modal-footer">
+			<a href="#!" onclick="Materialize.toast('Successfully enrolled!!', 4000)" style="background-color:green;color:white;margin-right:10px" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			<a href="#!" onclick="Materialize.toast('Sorry Come later!!', 4000)" style="background-color:red;color:white;margin-right:200px" class=" modal-action modal-close waves-effect waves-green btn-flat">DisAgree</a>
+	  </div>
+</div>
+
+<ul id="slide-out" class="side-nav" style="z-index :1000">
+<li>
+	<div class="user-view">
+		<div class="background" style="background-color:#ffb74d;">
+			<img src="">
+		 </div>
+		<a href="#"><img class="circle" src="images/material.png"></a>
+		<a href="#"><span class="white-text name">Materialize css</span></a>
+		<a href="#"><span class="white-text email">version 0.100.2</span></a>
+	</div>
+	</li>
+	<li><a href="http://archives.materializecss.com/0.100.2/"><i class="material-icons">assignment</i>Materialize Documentation</a></li>
+	<li><a href="https://api.jquery.com/"><i class="material-icons">assessment</i>JQuery Documentation</a></li>
+	<li><div class="divider"></div></li>
+	<li><a class="subheader">Topics today</a></li>
+	<li><a class="waves-effect" href="http://archives.materializecss.com/0.100.2/side-nav.html">SideNavigation</a></li>
+               <li><a class="waves-effect"  href="http://archives.materializecss.com/0.100.2/parallax.html">Parallax</a></li>
+	<li><a class="waves-effect" href="http://archives.materializecss.com/0.100.2/cards.html">Cardview</a></li>
+	<li><a class="waves-effect" href="http://archives.materializecss.com/0.100.2/carousel.html">Carousel</a></li>
+	<li><a class="waves-effect" href="http://archives.materializecss.com/0.100.2/modals.html">Modals</a></li>
+ </ul>
+<div class="row" style="background-color:#F99C0C;position:sticky;top:0px;overflow:hidden;width:100%;z-index :999">
+<div class="col l6">
+		<br>
+	 	<a style="color:white" id="sidenav" href="" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>			 
+	</div>
+	<div style="" class="col l6 pull-l2" >
+		<h1 style="font-size:30px;color:white;margin-top:15px;margin-bottom:20px">Materialize CSS Workshop</h1>
+	</div>
+</div>
+<div style="" class="container z-depth-5">
+<center><h5 style="padding-top:10px;padding-bottom:20px;position:absolute;padding-left:320px">Materialize Carousel</h5><center>
+	<div class="carousel" style="margin-top:50px">
+		<a class="carousel-item" href="#one!"><img src="images/pic1.jpg"></a>
+		<a class="carousel-item" href="#two!"><img src="images/pic2.jpg"></a>
+		<a class="carousel-item" href="#three!"><img src="images/pic3.jpg"></a>
+		<a class="carousel-item" href="#four!"><img src="images/pic4.jpg"></a>
+		<a class="carousel-item" href="#five!"><img src="images/pic5.jpg"></a>
+	  </div>
+</div>
+<div style="margin-top:50px"class="parallax-container">
+      <div class="parallax"><img src="images/demo.jpg" ></div>
+    </div>
+<div style="margin-top:50px;"class="container">
+<div class="row">
+<div class="col l6">
+		<div class="container">
+			<div class="card" style="height:500px">
+				<div class="card-image">
+					<img src="images/demo.jpg">
+					<span class="card-title">Materialize Cards</span>
+					 <a onclick="Materialize.toast('You clicked FAB', 4000)" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+				</div>
+				<div class="card-content">
+					<h5>Cards Type : </h5>
+					<ol>
+						<li>Basic Card</li>
+						<li>Image Card</li>
+						<li>FABs in Cards</li>
+						<li>Horizontal Card</li>
+						<li>Card Reveal</li>
+						<li>Tabs in Cards</li>
+						<li>Card Panel</li>
+					</ol>
+				</div>
+			 </div>
+		</div>
+	</div>
+			
+	<div class="col l6">
+		<div class="container">
+			<div class="card">
+				<div class="card-content" style="background-color:red;color:white">
+					<p>Materialize provides class to change the size of cards as shown below, the cards size can also be customized by changing width,height using css.</p>
+				</div>
+				<div class="card-tabs" >
+					 <ul class="tabs tabs-fixed-width">
+						<li class="tab"><a href="#test4">Small</a></li>
+						<li class="tab"><a class="active" href="#test5">Medium</a></li>
+						<li class="tab"><a href="#test6">Large</a></li>
+					 </ul>
+				</div>
+				<div class="card-content" style="background-color:#F79A9A;color:white">
+					 <div id="test4">&ltdiv class="card small"&gt ... &lt/div&gt</div>
+					<div id="test5">&ltdiv class="card medium"&gt ... &lt/div&gt</div>
+					<div id="test6">&ltdiv class="card large"&gt ... &lt/div&gt</div>
+				</div>
+			</div>
+					  
+			<div style="margin-top:30px;"class="card-panel blue">
+         				 <span class="white-text"><p align="justify">Cards are used for displaying content of different types of objects.For presenting the similar objects whose size or supported actions can vary considerably, like photos with captions of variable length.</p>
+          				</span>
+       			 </div>
+		</div>
+	</div>
+</div>
+</div>
+<center>
+<a style="background-color:red;margin-bottom:30px;" class="waves-effect waves-light btn pulse modal-trigger" href="#modal1">GuideLines
+</a>
+</center>
+<div style="display:flex;margin-bottom:20px;margin-left:300px">
+<center>
+	<img class="zoom" style="padding-left:30px" src="images/petta.jpg"  id="petta.jpg" height="150" width="150"/>
+	<img class="zoom" style="padding-left:30px" src="images/viswa2.jpg" id="viswa2.jpg" height="150" width="150"/>
+	<img class="zoom" style="padding-left:30px" src="images/sarkar.jpg" id="sarkar.jpg" height="150" width="150"/>
+	<img class="zoom" style="padding-left:30px" src="images/viswasam.jpg" id="viswasam.jpg" height="150" width="150"/>
+	</center>
+</div>
+<div class="row" style="background-color:#F99C0C;color:white;margin-bottom:0px;z-index:99999999">
+	<center style="padding-top:10px;"><h6>Webpage designed by J.P.Naveen Kumar</h6><h6>contact me @ jpnaveenkumar1998@gmail.com</h6>
+	<div style="display:flex;color:white;padding-left:520px">
+		<h6><center>other links : <a style="color:white" href="https://jakuva.000webhostapp.com/">Portfolio,</a><a style="color:white" href="https://jakuva.000webhostapp.com/rate2day/weather.php"> Weather app</a></center></h6>
+	</div>
+	</center>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+$('.zoom').click(function(){
+	$('#modal2').modal();
+	$('#place').attr('src','images/'+this.id);
+	$('#modal2').modal('open');
+});
+
+function removeOverlay() {
+	  $('div[id^=sidenav-overlay]').remove();
+	}
+$(document).ready(function(){
+setTimeout(function def(){$('#modal1').modal('open');},3000);
+$('.modal').modal();
+$('.parallax').parallax();
+$('.carousel').carousel();
+$('.button-collapse').sideNav({
+     menuWidth: 300, // Default is 300
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true,
+	  onOpen:function st(){
+		$('#sidenav').animate({'marginLeft' : "+=300px"});
+	  },
+	  onClose:function cl(){
+		//alert('working');
+		$('#sidenav').animate({'marginLeft' : "-=300px"});
+	  }
+});
+$('.button-collapse').click(removeOverlay);});
+
+</script>
+</body>
+</html>
