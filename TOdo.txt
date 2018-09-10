@@ -1,0 +1,51 @@
+<div class="container">
+	<div class="card-panel">
+		<div class="card-content">
+				<div class="row">
+					<div class="col l4">
+						<center><h5>1</h5>
+						<p>add content here</p></center>
+					</div>
+					<div class="col l4">
+						<center><h5>2</h5>
+						<p>add content here</p></center>
+					</div>
+					<div class="col l4">
+						<center><h5>3</h5>
+						<p>add content here</p></center>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col l4">
+						<center><h5>4</h5>
+						<p>add content here</p></center>
+					</div>
+					<div class="col l4">
+						<center><h5>5</h5>
+						<p>add content here</p></center>
+					</div>
+					<div class="col l4">
+						<center><h5>6</h5>
+						<p>add content here</p></center>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!----modal options-----!>
+$(".modal").modal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
+      inDuration: 00, // Transition in duration
+      outDuration: 200, // 3Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+      ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+        //alert("Ready");
+        //setTimeout(function def(){alert('d');},3000);
+		console.log(modal, trigger);
+      },
+      complete: function() { alert('Closed'); } // Callback for Modal close
+    });
